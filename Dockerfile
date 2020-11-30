@@ -1,5 +1,5 @@
 FROM testcafe/testcafe:1.9.3
-LABEL maintainer="DevRel <devrel@mallgroup.com>"
+LABEL maintainer="Daniel Rataj <daniel.rataj@centrum.cz>"
 LABEL org.opencontainers.image.source="https://github.com/whoopsmonitor/whoopsmonitor-check-testcafe"
 
 LABEL com.whoopsmonitor.documentation="https://github.com/whoopsmonitor/whoopsmonitor-check-testcafe"
