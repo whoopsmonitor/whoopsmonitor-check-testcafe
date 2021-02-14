@@ -19,7 +19,7 @@ Workdir of the running container is in `/tests` directory. So you have to mount 
 Folder example:
 
 ```bash
-docker run --rm -it -v $(pwd)/whoopsmonitor-worker/NOT_DEFINED:/tests whoopsmonitor-check-testcafe index.js
+docker run --rm -it -v $(pwd)/src:/whoopsmonitor-worker/NOT_DEFINED whoopsmonitor-check-testcafe tests/
 ```
 
 `NOT_DEFINED` is just a dummy directory. Don't worry about it.
@@ -27,7 +27,7 @@ docker run --rm -it -v $(pwd)/whoopsmonitor-worker/NOT_DEFINED:/tests whoopsmoni
 File example:
 
 ```bash
-docker run --rm -it -v $(pwd)/whoopsmonitor-worker/NOT_DEFINED/index.js:/tests/index.js whoopsmonitor-check-testcafe /tests/index.js
+docker run --rm -it -v $(pwd)/src/index.js:/whoopsmonitor-worker/NOT_DEFINED/index.js whoopsmonitor-check-testcafe /tests/index.js
 ```
 
 -   `-it` Do not forget to run the container with interactive terminal.
