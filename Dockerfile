@@ -1,4 +1,4 @@
-FROM testcafe/testcafe:1.10.1
+FROM testcafe/testcafe:1.11.0
 LABEL maintainer="Daniel Rataj <daniel.rataj@centrum.cz>"
 LABEL org.opencontainers.image.source="https://github.com/whoopsmonitor/whoopsmonitor-check-testcafe"
 
